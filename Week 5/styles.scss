@@ -1,0 +1,52 @@
+$dimension: (
+    height: 80% 
+    width: 100%
+    );
+$radius: 1rem 1rem 0 0;
+$border: 0.1rem black solid;
+$margin: 0.5rem 0;
+
+
+.card-grid{
+    padding: 1rem 15rem;
+}
+.row-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    div {
+        border: $border;
+        border-radius: 1rem;
+    }
+    img {
+        border-radius: $radius;
+        height: $dimension;
+        width: $dimension;
+    }
+    h2 {
+        margin: $margin;
+        text-align: center;
+    }
+    
+}
+.col-grid{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    height: 120rem;
+    align-items: center;
+    div {
+        border: $border;
+        border-radius: 1rem;
+        margin: 5px  0;
+    }
+    img {
+        border-radius: $radius;
+        height: $dimension;
+        width: $dimension;
+    }
+    h2 {
+        margin: $margin;
+        text-align: center;
+    }
+}
