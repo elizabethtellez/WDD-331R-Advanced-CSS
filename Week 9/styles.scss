@@ -1,0 +1,126 @@
+// VARIABLES
+$olive: #a3b18a;
+$darkgray: #4c4c4c;
+$white: #fff;
+$gray: gray;
+
+
+// CSS
+body {
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  color: $white;
+  font-family: "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+h1 {
+  margin: 100px;
+  font-family: "Helvetica", sans-serif;
+   letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: center;
+  color: $olive;
+  font-size: 3rem;
+}
+
+.menu-icon {
+  position: absolute; // Puts the meny icon in the top left corner
+  top: 3%; // Positions it according to the top
+  left: 1%; // Positions it according to the left
+  z-index: 150; // Brings it to the very front, no matter what
+  cursor: pointer; 
+}
+
+// HAMBURGER MENU
+.menu-icon {
+  background-color: $gray;
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.ham1{
+  width: 35px;
+  height: 5px;
+  transition: all 0.75s ease; // 'All' identifies that we want all properties to transition, for how long, and with ease 
+  background-color: $darkgray;
+}
+
+.ham2,
+.ham3 {
+  width: 35px;
+  height: 5px;
+  margin-top: 5px; // Creates a margin between them and the bars above them
+  transition: all 0.75s ease; // 'All' identifies that we want all properties to transition, for how long, and with ease
+  background-color: $darkgray;
+}
+
+
+.menu-icon:hover .ham1,
+.menu-icon:hover .ham2,
+.menu-icon:hover .ham3 {
+  background-color: $olive;
+}
+
+.ham-switch .ham1 {
+  transform: rotate(-45deg) translate(-8px, 5px); // this is how the bars turn into the X when the menu is expanded
+  background-color: $white;
+}
+
+.ham-switch .ham2 {
+  opacity: 0; // Causes this bar to disappear when the transform occurs
+}
+
+.ham-switch .ham3 {
+  transform: rotate(45deg) translate(-9px, -7px); // this is how the bars turn into the X when the menu is expanded
+  background-color: $white;
+  padding: 0px;
+}
+
+.ham-switch:hover .ham1,
+.ham-switch:hover .ham3 {
+  background-color: $olive;
+}
+
+.menu {
+  height: 100%;
+  width: 0;
+  background-color: $darkgray;
+}
+
+
+// OPEN CSS
+.open {
+  width: 350px;
+}
+
+.open,
+.menu {
+  position: absolute; // Makes it so the 'open' and 'menu' are absolute
+  top: 0; // aligns it to the top
+  left: 0; // aligns it to the bottom
+  transition: all 0.75s ease; // 'All' identifies that we want all properties to transition, for how long, and with ease
+}
+
+// MENU LIST
+ul {
+  height: 100%;
+  width: 20%;
+  list-style-type: none;
+  margin: 50px auto;
+}
+
+li {
+  padding-top: 30px;
+}
+
+ul li a:hover {
+  color: $olive;
+  transition: all 0.75s ease; // 'All' identifies that we want all properties to transition, for how long, and with ease
+}

@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  color: #fff;
+  font-family: "Helvetica", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 100px;
+  font-family: "Helvetica", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #a3b18a;
+  font-size: 3rem;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  z-index: 150;
+  cursor: pointer;
+}
+
+.menu-icon {
+  background-color: gray;
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.ham1 {
+  width: 35px;
+  height: 5px;
+  transition: all 0.75s ease;
+  background-color: #4c4c4c;
+}
+
+.ham2,
+.ham3 {
+  width: 35px;
+  height: 5px;
+  margin-top: 5px;
+  transition: all 0.75s ease;
+  background-color: #4c4c4c;
+}
+
+.menu-icon:hover .ham1,
+.menu-icon:hover .ham2,
+.menu-icon:hover .ham3 {
+  background-color: #a3b18a;
+}
+
+.ham-switch .ham1 {
+  transform: rotate(-45deg) translate(-8px, 5px);
+  background-color: #fff;
+}
+
+.ham-switch .ham2 {
+  opacity: 0;
+}
+
+.ham-switch .ham3 {
+  transform: rotate(45deg) translate(-9px, -7px);
+  background-color: #fff;
+  padding: 0px;
+}
+
+.ham-switch:hover .ham1,
+.ham-switch:hover .ham3 {
+  background-color: #a3b18a;
+}
+
+.menu {
+  height: 100%;
+  width: 0;
+  background-color: #4c4c4c;
+}
+
+.open {
+  width: 350px;
+}
+
+.open,
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.75s ease;
+}
+
+ul {
+  height: 100%;
+  width: 20%;
+  list-style-type: none;
+  margin: 50px auto;
+}
+
+li {
+  padding-top: 30px;
+}
+
+ul li a:hover {
+  color: #a3b18a;
+  transition: all 0.75s ease;
+}/*# sourceMappingURL=styles.css.map */
