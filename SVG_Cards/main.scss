@@ -1,0 +1,52 @@
+$width: 255px;
+$height: 400px;
+$stroke: black;
+$stroke-width: 2px;
+
+.card1{
+  width: $width;
+  height: $height;
+  stroke: $stroke;
+  stroke-width: $stroke-width;
+}
+
+.rectangle1{
+  width: 50px;
+  height: 50px;
+  fill: #ffb703;
+}
+
+.circle1 {
+  fill: #ff006e;
+  stroke: #dda15e;
+  stroke-width: 3px;
+ }
+
+.card2{
+  width: $width;
+  height: $height;
+  stroke: $stroke;
+  stroke-width: $stroke-width;
+}
+
+.rectangle2{
+  fill: #e9c46a;
+  width: 60px;
+  height: 60px;
+  stroke: #264653;
+  stroke-width: 4px;
+}
+
+.rectangle3{
+  fill: #ef233c;
+  width: 60px;
+  height: 60px;
+  stroke: #8d99ae;
+  stroke-width: 5px;
+}
+
+.circle2{
+  fill: #ffbe0b;
+  stroke: white;
+  stroke-width: 3px;
+}

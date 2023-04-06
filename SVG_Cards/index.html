@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>SVG Cards</title>
+</head>
+<body>
+    <!-- CARD 1 -->
+
+ <svg width="400" height="600"> 
+    <defs>
+      <pattern id="pattern1" 
+               patternUnits="userSpaceOnUse" 
+               x="1" y="20" 
+               width="35" height="40">
+        <rect x="5" y="15" 
+              rx="1" ry="0" 
+              class="rectangle1"/>
+        <circle cx="20" cy="1" 
+                r="30" 
+                class="circle1" /> 
+        <circle cx="20" cy="20" 
+                r="10" 
+                fill="#0B43A2" 
+                stroke="white" 
+                stroke-width="4" />
+      </pattern>
+    </defs>
+    <rect class="card1" 
+          x="50" y="10" 
+          ry="10" 
+          fill="url(#pattern1)"/>
+</svg>
+
+ <!-- CARD 2 -->
+ <svg width="400" height="600"> 
+    <defs>
+      <pattern id="pattern2" 
+               patternUnits="userSpaceOnUse" 
+               x="35" y="45" 
+               width="25" height="25">
+        <rect x="5" y="5" 
+              transform="rotate(-45)" 
+              class="rectangle2"/>
+        <rect x="5" y="5" 
+              transform="rotate(45)" 
+              class="rectangle3"/>
+        <circle cx="12" cy="12" 
+                r="6" 
+                class="circle2"/>
+      </pattern>
+    </defs>
+    <rect class="card2" 
+          x="50" y="10" 
+          ry="10" 
+          fill="url(#pattern2)"/>
+</svg>
+</body>
+</html>

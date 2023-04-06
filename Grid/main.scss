@@ -1,0 +1,14 @@
+$grid-columns: 3;
+$grid-gap: 10px;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr);
+  grid-gap: $grid-gap;
+}
+
+.grid-item {
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
